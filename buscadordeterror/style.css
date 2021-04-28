@@ -1,0 +1,267 @@
+* {margin:0;padding:0}
+html, body {height:100%}
+body {background:#000;font-family:Tahoma, Geneva, sans-serif;font-size:100%;line-height:.9375em;color:#fff}
+img {border:0;vertical-align:top;text-align:left}
+object {vertical-align:top;outline:none}
+ul, ol {list-style:none}
+.fleft {float:left}
+.fright {float:right}
+.clear {clear:both}
+.col-1, .col-2, .col-3 {float:left}
+.alignright {text-align:right}
+.aligncenter {text-align:center}
+.wrapper {width:100%;overflow:hidden}
+.container {width:100%}
+/* GLOBAL */
+#main {width:1000px;margin:0 auto;font-size:.75em}
+#header {height:285px;background:url(images/header-bg.jpg) no-repeat left top}
+#content {position:relative}
+#footer {height:80px;background:url(images/footer-bg.jpg) no-repeat left top}
+/* forms parameters */
+input, select, textarea {font-family:Tahoma, Geneva, sans-serif;font-size:1em;vertical-align:middle;font-weight:normal}
+/* other */
+.img-indent {margin:0 20px 0 0;float:left}
+.img-box {width:100%;overflow:hidden;padding-bottom:15px}
+.img-box img {float:left;margin:0 20px 0 0}
+.extra-wrap {overflow:hidden}
+p {margin-bottom:15px}
+.p1 {margin-bottom:8px}
+.p2 {margin-bottom:16px}
+.p3 {margin-bottom:24px}
+/* txt, links, lines, titles */
+a {color:#bde0ff;outline:none}
+a:hover {text-decoration:none}
+h2, h3 {font-family:Georgia, "Times New Roman", Times, serif;color:#bde0ff;font-weight:normal;line-height:1.2em;margin-bottom:16px}
+h2 {font-size:2em}
+h3 {font-size:1.67em}
+h4 {font-size:1em;margin-bottom:3px;cursor:pointer;}
+h4 a {color:#fff;text-decoration:none}
+h4 a:hover {text-decoration:underline}
+h5 {font-size:1em;margin-bottom:3px;color:#f00}
+h5 a {color:#f00;text-decoration:none}
+h5 a:hover {text-decoration:underline}
+h6 {font-size:4em;margin-bottom:3px;color:#f00}
+h6 a {color:#f00;text-decoration:none}
+h6 a:hover {text-decoration:underline}
+.link1 {color:#fff}
+.link2 {color:#bc191a}
+/* boxes */
+.content-box {background:url(images/content-top.jpg) left top repeat-y;width:100%}
+.content-box .top {background:url(images/content-top.jpg) no-repeat left top}
+.content-box .bottom {background:url(images/content-bottom.jpg) no-repeat left bottom;width:100%}
+.content-box .inside {padding:1px 269px 0 48px}
+.box {width:100%}
+.box .top {background:url(images/box-bot.png) no-repeat left bottom;height:16px !important;overflow:hidden;font-size:0;line-height:0}
+.box .bottom {background:url(images/box-bot.png) no-repeat left top;height:16px;overflow:hidden;font-size:0;line-height:0}
+.box .inner {background:url(images/box-bg.png) left top;padding:8px 42px 10px 40px}
+.box .inner_copy {border:0;color:#fff;float:right;width:0.09%!important;margin:-100px;overflow:hidden;line-height:0px;padding:0px;font-size:11px}
+/* header */
+#header .row-1 {height:190px}
+#header .row-1 .indent {padding:32px 0 0 32px}
+#header .row-2 {}
+.nav {padding:13px 0 0 26px}
+.nav li {float:left;padding-right:46px}
+.nav li.last {padding-right:0}
+/* content */
+#content .magic {position:absolute;right:-90px;top:31px}
+.img-list li {width:100%;overflow:hidden;padding-bottom:22px}
+.img-list li.last {padding-bottom:0}
+.img-list li img {float:left;margin-right:20px}
+.img-list li img.png {margin-bottom:-6px}
+.list1 {padding-bottom:18px}
+.list1 li {background:url(images/arrow1.gif) no-repeat left 5px;padding:0 0 0 12px;position:relative}
+.list1 li li {background:url(images/arrow2.gif) no-repeat left 6px}
+/* footer */
+#footer .indent {padding:27px 86px 0 86px}
+#footer img {position:relative;top:-3px}
+/* forms */
+#contacts-form {clear:right;width:100%;overflow:hidden;padding-bottom:20px}
+#contacts-form fieldset {border:none;float:left}
+#contacts-form .field {clear:both}
+#contacts-form label {float:left;width:97px;line-height:18px;padding-bottom:3px;font-weight:bold}
+#contacts-form input {width:238px;padding:0 0 0 3px;background:url(images/form-bg.png) left top;border:1px solid #bde0ff;color:#fff;float:left}
+#contacts-form textarea {width:495px;height:208px;padding:0 0 0 3px;background:url(images/form-bg.png) left top;border:1px solid #bde0ff;color:#fff;margin-bottom:18px;overflow:auto;float:left}
+#content .inner_copy {border:0;color:#f00;float:left;width:50%!important;margin:-202px 0 0 0;overflow:hidden;line-height:0;padding:0;font-size:12px}
+
+.button {text-decoration: none;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: helvetica;
+    font-weight: 300;
+    font-size: 25px;
+    font-style: italic;
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 15px;
+    border: 3px double #000000;
+    align-self: center;
+    cursor:pointer;
+  }
+  .boton_1:hover{
+    opacity: 0.6;
+    text-decoration: none;
+  }
+
+.buttonResp {text-decoration: none;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: helvetica;
+    font-weight: 200;
+    font-size: 15px;
+    font-style: italic;
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px double #000000;
+    align-self: center;
+  }
+  .boton_1:hover{
+    opacity: 0.6;
+    text-decoration: none;
+  }
+
+.buttonPista {text-decoration: none;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: helvetica;
+    font-weight: 200;
+    font-size: 15px;
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px double #000000;
+    align-self: center;
+  }
+  .boton_1:hover{
+    opacity: 0.6;
+    text-decoration: none;
+  }
+
+  /* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: 0px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+  #overlay {
+  position: absolute; 
+  top: 100px; 
+  color: #FFF; 
+  text-align: center;
+  font-size: 20px;
+  background-color: rgba(221, 221, 221, 0.3);
+  width: 640px;
+  padding: 10px 0;
+  z-index: 2147483647;
+}
+
+#v {
+  z-index: 1;
+}

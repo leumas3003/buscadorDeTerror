@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>El buscador de terror </title>
+<link rel="shortcut icon" href="images/fantasma.ico" type="image/x-icon">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script src="js/rollover.js" type="text/javascript"></script>
+<!--[if lt IE 7]>
+	<link href="ie_style.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="js/ie_png.js"></script>
+	<script type="text/javascript">
+		 ie_png.fix('.png, .box .top, .box .bottom, .box .inner');
+	</script>
+<![endif]-->
+<script>
+function validateForm() {
+  var a = document.forms["myForm"]["sillaA"].value;
+  var b = document.forms["myForm"]["sillaB"].value;
+  var c = document.forms["myForm"]["sillaC"].value;
+  var d = document.forms["myForm"]["sillaD"].value;
+  if (a != "2" || b != "4" || c != "1" || d != "3") {
+    alert("RESPUESTA INCORRECTA");
+    return false;
+  }
+}
+function pista1(){
+	alert("Escucha atentamente el audio.");
+}
+function pista2(){
+	alert("Ten en cuenta que hay algunos que no se sientan o se levantan en su turno.");
+}
+function solucion(){
+	alert("¿Te asusta el juego?  A=2 ; B=4 ; C=1 ; D=3");
+}
+function audio(){
+var audio = document.getElementById("audio");
+
+audio.play();
+}
+</script>
+</head>
+
+<body onload="MM_preloadImages('images/m1-act.jpg','images/m2-act.jpg','images/m3-act.jpg','images/m4-act.jpg','images/m5-act.jpg')">
+<div id="main">
+<!-- header -->
+	<div id="header">
+		<div class="row-1">
+			<div class="indent"><a href="home.html"><img alt="" src="images/logo3.jpg" /></a></div>
+		</div>
+		
+	</div>
+<!-- content -->
+	<div id="content">
+<!-- content-box begin -->
+		<div class="content-box">
+			<div class="top">
+				<div class="bottom">
+					<div class="inside">
+<!-- box begin -->
+						<div class="box">
+							<div class="top"></div>
+							<div class="inner">
+								<h2>Habitación niños</h2>
+								<p>El salón y el despacho eran aterradores, es el momento de ir a la habitación de los niños, seguro que esta es más normal.
+								<p> De repente sientes una mirada aterradora observandote, miras por la venta y allí lo ves, una figura sombría mirandote desde fuera. Desaparece. En ese momento te das cuenta, estás en un segundo piso. ¿Cómo puede ser? Sigues revisando la habitación.
+								Ves que hay un pequeño tiovivo, ¡Mucho mejor!, esto ya no da tanto miedo. Te empiezas a fijar y ves cuatro niños sentados. Te acercas para hablar con ellos a ver si te pueden contar qué es lo que está pasando, pero te das cuenta que no son niños, son muñecos!  Que raro, jurarías que los has visto moverse...<br>
+								Al observarlo detenidamente, ves que cada muñeco tiene un número y cada asiento una letra. El 1 en la A, el 2 en la B, el 3 en la C y el 4 en la D.<br><br><br>
+								De repente empieza a sonar una canción ¿Quien la está cantando?
+								</p>
+								<p><audio src="./sound/tiovivo.ogg"></p>
+								<audio id="audio" src="sound/audioFinal.mp3" preload="auto" controls hidden="true"></audio>
+								
+								<p><a href="javascript:audio()">Comenzar melodía</a></p>
+								<img alt="" src="images/ninyos.png" width="600" height="450"/>
+								<form name="myForm" action="./7fantasmas.html" onsubmit="return validateForm()" method="post">
+									<div>
+										<p>
+								</p><p>
+								</p>
+									</div>
+									<div>
+										¿Quién está en la silla A?:<input type="text" name="sillaA">
+									</div>
+									<div>
+										¿Quién está en la silla B?:<input type="text" name="sillaB">
+									</div>
+									<div>
+										¿Quién está en la silla C?:<input type="text" name="sillaC">
+									</div>
+									<div>
+										¿Quién está en la silla D?:<input type="text" name="sillaD">
+									</div>
+									<input type="submit" value="Validar" class="buttonResp" >
+								</form>
+								<br>
+								<input type="button" value="Pista 1" class="buttonPista" onclick="js:pista1()" >
+								<input type="button" value="Pista 2" class="buttonPista" onclick="js:pista2()" >
+								<input type="button" value="SOLUCIÓN" class="buttonPista" onclick="js:solucion()" >
+							</div>
+							<div class="inner_copy">More <a href="http://www.templates.com/">Website Templates</a> @ Templates.com!</div>
+							<div class="bottom"></div>
+						</div>
+<!-- box end -->
+					</div>
+				</div>
+			</div>
+		</div>
+<!-- content-box end -->
+		<img alt="" src="images/magic.png" class="magic png" />
+	</div>
+<!-- footer -->
+	<div id="footer">
+		<div class="indent">
+			<div class="fleft">Copyright - Samuel&Imanol Company</div>
+			<div class="fright">
+</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

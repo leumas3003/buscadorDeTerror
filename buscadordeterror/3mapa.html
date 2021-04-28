@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>El buscador de terror </title>
+<link rel="shortcut icon" href="images/fantasma.ico" type="image/x-icon">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script src="js/rollover.js" type="text/javascript"></script>
+<!--[if lt IE 7]>
+	<link href="ie_style.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="js/ie_png.js"></script>
+	<script type="text/javascript">
+		 ie_png.fix('.png, .box .top, .box .bottom, .box .inner');
+	</script>
+<![endif]-->
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x != "42254546" && x != "9999" ) {
+    alert("RESPUESTA INCORRECTA");
+    return false;
+  }
+}
+function pista1(){
+	alert("Parece que las imágenes tienen números, ¿deberás hacer algo con ellos?");
+}
+function solucion(){
+	alert("Pensaba que serías capaz de sumar y restar SOLUCION = 42254546");
+}
+
+</script>
+</head>
+
+<body onload="MM_preloadImages('images/m1-act.jpg','images/m2-act.jpg','images/m3-act.jpg','images/m4-act.jpg','images/m5-act.jpg')">
+<div id="main">
+<!-- header -->
+	<div id="header">
+		<div class="row-1">
+			<div class="indent"><a href="home.html"><img alt="" src="images/logo3.jpg" /></a></div>
+		</div>
+		
+	</div>
+<!-- content -->
+	<div id="content">
+<!-- content-box begin -->
+		<div class="content-box">
+			<div class="top">
+				<div class="bottom">
+					<div class="inside">
+<!-- box begin -->
+						<div class="box">
+							<div class="top"></div>
+							<div class="inner">
+								<h2>Localizaciones</h2>
+								<p>Perfecto. Este es el mapa que te envió su compañero de despacho, estoy seguro que si lo desciframos, conseguiremos el código para encontrar la casa.</p>
+								<p>Lo único que has podido encontrar aparte del mapa han sido las fotos que dejó encima de la mesa de su despacho. ¿Cuál es la relación?</p>
+								<a href="https://www.google.com/maps/d/u/0/embed?mid=1gLq056DO5YOjblIYtwDrj4KCXWllLltl" target="_blank">Mapa de localizaciones</a>
+								<br><br><br><a href="images/mapa/casa1.jpg" target="_blank">Casa 1</a><br>
+								<a href="images/mapa/casa2.jpg" target="_blank">Casa 2</a><br>
+								<a href="images/mapa/casa3.jpg" target="_blank">Casa 3</a><br>
+								<a href="images/mapa/casa4.jpeg" target="_blank">Casa 4</a><br>
+								<a href="images/mapa/casa5.jpg" target="_blank">Casa 5</a><br>
+								<a href="images/mapa/casa6.jpg" target="_blank">Casa 6</a><br>
+								<a href="images/mapa/casa7.jpg" target="_blank">Casa 7</a><br>
+								<a href="images/mapa/casa8.jpg" target="_blank">Casa 8</a><br>
+								<a href="images/mapa/casa9.jpg" target="_blank">Casa 9</a><br>
+								<a href="images/mapa/casa10.jpg" target="_blank">Casa 10</a><br>
+							</div>
+							
+							<p>
+							<form name="myForm" action="./3zpuerta.html" onsubmit="return validateForm()" method="post">
+								UBICACIÓN DE LA CASA (EN NÚMEROS):<input type="text" name="fname">
+								<input type="submit" value="Validar" class="buttonResp" >
+							</form>
+							<br>
+								<input type="button" value="Pista 1" class="buttonPista" onclick="js:pista1()" >
+								<input type="button" value="SOLUCIÓN" class="buttonPista" onclick="js:solucion()" >
+							<div class="bottom"></div>
+						</div>
+<!-- box end -->
+					</div>
+				</div>
+			</div>
+		</div>
+<!-- content-box end -->
+		<img alt="" src="images/magic.png" class="magic png" />
+	</div>
+<!-- footer -->
+	<div id="footer">
+		<div class="indent">
+			<div class="fleft">Copyright - Samuel&Imanol Company</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

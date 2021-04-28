@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>El buscador de terror </title>
+<link rel="shortcut icon" href="images/fantasma.ico" type="image/x-icon">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script src="js/rollover.js" type="text/javascript"></script>
+<!--[if lt IE 7]>
+	<link href="ie_style.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="js/ie_png.js"></script>
+	<script type="text/javascript">
+		 ie_png.fix('.png, .box .top, .box .bottom, .box .inner');
+	</script>
+<![endif]-->
+<script>
+function lanzarSusto(){
+abrir('images/foto1.jpg','1000','1000');
+setTimeout(susto,5000);
+}
+function susto(){
+var audio = document.getElementById("audio");
+
+audio.play();
+}
+function abrir(url,largo,altura) {
+open(url,'','top=100,left=100,width='+largo+',height='+altura+'') ;
+}
+/* Open when someone clicks on the span element */
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+</head>
+
+<body onload="openNav();">
+<div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav();">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    
+    <h6>Cuenta muy bien <p><br><br><br><br>todas las personas</h6>
+  </div>
+
+</div>
+<div id="main">
+<!-- header -->
+	
+<!-- content -->
+	
+								<img alt="" src="images/foto2.jpg"/>
+	</div>						
+</body>
+</html>
